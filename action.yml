@@ -277,7 +277,7 @@ runs:
             if [ -f KernelSU/kernel/Kconfig ]; then
                 echo "KernelSU has been initialized,skipped."
             else
-                curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s ${{ inputs.ksu-version }}
+                curl -LSs "https://raw.githubusercontent.com/wxt1221/KernelSU/main/kernel/setup.sh" | bash -s main ${{ inputs.ksu-version }}
             fi
            #if grep -q "CONFIG_KPROBES=y" "arch/${{ inputs.arch }}/configs/${{ inputs.config }}" ; then
                #echo "KPROBES enabled,skip patch."
